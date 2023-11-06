@@ -12,7 +12,7 @@ document.querySelector("#play").addEventListener("click", function() {
 
 	console.log("Update volume information")
 	const volume = document.getElementById("slider").value;
-	document.getElementById("volume").innerHTML = volume;
+	document.getElementById("volume").innerHTML = `${volume}%`;
 });
 
 document.querySelector("#pause").addEventListener("click", function() {
@@ -55,7 +55,7 @@ document.querySelector("#slider").addEventListener("change", function() {
 	const volume = document.getElementById("slider").value;
 
 	video.volume = volume / 100;
-	document.getElementById("volume").innerHTML = volume;
+	document.getElementById("volume").innerHTML = `${volume}%`;
 });
 
 document.querySelector("#vintage").addEventListener("click", function() {
